@@ -1,0 +1,184 @@
+img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+    background-color: skyblue;
+}
+
+#contenu h1{
+    
+    display: block;
+    color: #C30000;
+    margin-top: 0px;
+    text-align: center;
+  
+}
+
+form {
+    width:88%;
+    padding: 25px;
+    border: 2px solid #C30000;
+    background: whitesmoke;
+}
+
+div{
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contenu{
+    width:400px;
+    margin: auto;
+    margin-top:5%;
+}
+
+label {
+    color: #C30000;
+}
+
+input[type=submit],input[type=button] {
+    background-color: #C30000;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px;
+    cursor: pointer;
+    width: 100%;
+    border: 4px double #C30000;
+}
+
+input[type=submit]:hover,input[type=button]:hover { 
+    background-color: whitesmoke;
+    color: #C30000;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px ;
+    border: 1px solid #C30000;
+    box-sizing: border-box;
+}
+
+.liheader{ /*for site.html*/
+    margin: 15px;
+    padding: 5px;
+    background-color: #C30000;
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+
+#listeheader{ /*for site.html*/
+    display: flex;
+    list-style-type: none;
+}
+
+#entetesite{ /*for site.html*/
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-radius: 60px;
+    margin-top: 30px;
+
+    /*position: absolute;
+    top: 0px;
+    left: 25px;
+    right: 25px;
+    bottom: 1500px;*/
+}
+
+.lienhearder{
+    text-decoration: none;
+    color: whitesmoke;
+
+
+}
+
+#imagesite{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.liaccueil{
+    background-color: #C30000;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 25px;
+}
+
+#ulaccueil{
+    display: block;
+    list-style-type: none;
+    border: 2px solid #C30000;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width:400px;
+    margin: auto;
+    margin-top:5%;
+    padding: 25px;
+    align-items: center;
+}
+
+#date{
+    margin-right: 50px;
+}
+
+
+#contenu{
+    display: flex ;
+}
+
+#entetesite h1{
+    color: #C30000;
+    font-family: serif;
+    font-size: 45px;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    border: 2px solid grey;
+    padding: 30px;
+}
+
+.paragraphesite  {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.liheader:hover {
+    background-color: skyblue;
+    transition: all 0.5s;
+}
+
+div h3{
+    text-align: center;
+    color: #C30000;
+    font-weight: bold;
+}
+
+div.paragraphesite{
+    text-align: center;
+    border: 2px solid grey;
+    margin: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+

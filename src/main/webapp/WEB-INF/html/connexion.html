@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page de connexion</title>
+	<meta charset="utf-8" />
+    <link href="css\style.css"  rel="stylesheet" type="text/css" />
+    <script src="js/connexion.js" type="application/javascript"></script>
+</head> 
+
+<body>
+    <div>
+	<a href="accueil"><img id="image" src="images\logo.png" /></a>
+    </div>
+        <div id="contenu" class="accueil" onmouseout="usuerOrMdpIncorrect()">
+            
+            <form method="POST" onsubmit="return Validation()">
+                <h1>Connexion</h1><br>
+                <span id="error"></span><br>
+                
+                <label><b>Identifiant</b></label>
+                <input id="username" type="text" placeholder="Identifiant" name="username" required onkeyup="usuerOrMdpIncorrect()">
+
+                <label><b>Mot de passe</b></label>
+                <input id="password" type="password" placeholder="Mot de passe" name="password"  required onkeyup="usuerOrMdpIncorrect()">
+
+                <input id="bouton1" type="submit"  value="Connexion" onkeydown="usuerOrMdpIncorrect()">
+                   
+            </form>
+        </div>
+    </body>
+
+
+
+    <footer>    
+    </footer>
+</html>

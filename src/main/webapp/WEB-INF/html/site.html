@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link th:href="@{/css/site.css}"  rel="stylesheet" type="text/css"/>
+    <title>Mes Consultations</title>
+</head>
+
+<header th:replace="~{fragment :: header}"></header>
+
+<main>
+    <body id="paragraphesitebody">
+        <div class="paragraphesite">
+            <h3>Le saviez-vous ?</h3>
+            Le paracétamol est une molécule très consommée contre la douleur ou la fièvre. A dose thérapeutique il engendre peu d’effets secondaires. En cas de surdosage (plus de 4 gr par jour), un risque important d’effets secondaires (notamment hépatique) existe.
+        </div>
+
+        <div class="paragraphesite">
+            <h3>COVID-19</h3>
+            Les plus de 65 ans vaccinés depuis plus de six mois ont désormais jusqu'au 15 décembre pour se faire vacciner s'ils veulent continuer à pouvoir se rendre au cinéma, au théâtre ou au restaurant sans devoir présenter un test Covid-19 négatif.<br>
+
+            Pour ceux vaccinés depuis moins de six mois, ils doivent attendre que ces six mois soient écoulés pour prendre leur nouveau rendez-vous vaccinal (ils disposeront à ce moment-là d'une fenêtre de cinq semaines pour prendre leur rendez-vous).
+        </div>
+
+        <div class="paragraphesite">
+            <h3>News</h3>
+            Depuis 2012 les effectifs des médecins en activité de moins de 70 ans sont stables (environ 215 000). La profession s'est féminisée, le nombre de généralistes baisse mais celui des spécialistes augmente. L'exercice libéral se raréfie au profit d'un exercice mixte (activités libérales et salariées).
+        </div>
+    </body>
+</main>
+<footer th:replace="~{fragment :: footer}"></footer>
+
+</body>
+</html>

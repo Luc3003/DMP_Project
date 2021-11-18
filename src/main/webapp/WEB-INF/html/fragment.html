@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Dossiers</title>
+</head>
+<body>
+
+<header id="entetesite" th:fragment="header">
+    <h1>Mon Espace</h1>
+    <ul id="menu-demo2">
+        <li><a href="#">Mon Espace</a>
+            <ul>
+                <li><a th:href="@{patientInfos?id=user}" href="#">Mes Informations</a></li>
+                <li><a th:href="@{patientDossier?id=user}" href="#">Mes Consultations</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Medical</a>
+            <ul>
+                <li><a th:href="@{patient?id=user}" href="#">Prendre Rdv avec un Medecin</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Options</a>
+            <ul>
+                <li><a th:href="@{patient?id=user}" href="#">Accessibilité Malvoillant</a></li>
+                <li><a th:href="@{deconnexion}" href="#">Me Deconnecter</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<footer th:fragment="footer">
+    <div id="divfooter">
+        <img id="secu" th:src="@{/images/logo_cq.png}">
+        <img th:src="@{/images/logo_assur_mal.png}">
+    </div>
+</footer>
+
+</body>
+</html>

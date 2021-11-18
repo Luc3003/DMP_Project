@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Creer un Compte</title>
+    <script src="js/creacompte.js" type="application/javascript"></script>
+    <link href="css\style.css"  rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div>
+    <a href="accueil"><img id="image" src="images\logo.png" /></a>
+</div>
+<div id="contenu" class="accueil" onmouseout="emailNotAlreadyExist()">
+    <form method="POST" id="myForm" onsubmit="return Validation();">
+
+        <h1>Creer un Compte</h1>
+
+        <label><b>Nom</b></label>
+        <input id="nom" type="text" placeholder="Nom" name="nom" required>
+
+
+        <label><b>Prenom</b></label>
+        <input id="Prenom" type="text" placeholder="Prenom" name="prenom" required>
+
+
+        <label><b>Adresse</b></label>
+        <input id="Adresse" type="text" placeholder="Adresse" name="adresse" required>
+
+
+        <label><b>Email</b></label>
+        <input id="Email" type="text" placeholder="Email" name="email" required onmouseout="emailNotAlreadyExist()">
+        <span id="error_Email"></span><br>
+
+        <label><b>Telephone</b></label>
+        <input id="Telephone" type="text" placeholder="Telephone" name="telephone" required>
+        <span id="error_Tel"></span><br>
+
+
+        <label><b>Numero Sécurité Scoiale</b></label>
+        <input id="NumeroSecu" type="text" placeholder="num secu" name="num_secu"  minlength="13" maxlength="13" required>
+        <span id="error_NumSecu"></span><br>
+
+        <label id="date" ><b>Date de Naissance</b></label>
+        <input id="DateNaissance" type="date" placeholder="dateborn" name="dateborn" required><br>
+        <span id="error_Date"></span><br>
+
+        <label><b>Mot de passe</b></label>
+        <input id="MotdePasse" type="password" placeholder="Mot de passe" name="password" required>
+
+
+        <input id="bouton" type="submit"  value="Connexion" >
+
+    </form>
+</div>
+</body>
+</html>
